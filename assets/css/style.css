@@ -28,7 +28,7 @@ header {
 .logo {
     width: 100px;
     display: flex;
-    
+
 }
 
 
@@ -40,7 +40,7 @@ header {
     text-align: center;
 }
 
-.logoimg h1{
+.logoimg h1 {
     margin-top: 22px;
     font-family: 'Italianno';
 }
@@ -93,43 +93,43 @@ header {
     opacity: 1;
 }
 
-.banner .sliders{
+.banner .sliders {
     width: 1000vw;
-    height: 100%;  
+    height: 100%;
 }
 
-.banner .slide{
+.banner .slide {
     width: 100vw;
     height: 100%;
-    display:inline-block;
-    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.banner .slidearea{
+.banner .slidearea {
     display: flex;
     flex-direction: column;
     height: 100%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    color:#fff;
+    color: #fff;
 }
 
-.banner .slidearea h1{
+.banner .slidearea h1 {
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
 }
 
-.banner h1 span{
+.banner h1 span {
     color: #b28756;
 }
 
-.default{
+.default {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.default .section-title, 
+.default .section-title,
 .default .section-desc {
     text-align: center;
     text-transform: uppercase;
@@ -143,14 +143,14 @@ header {
 
 }
 
-.default .section-desc{
+.default .section-desc {
     font: size 12px;
     color: #ccc;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.default .section-body{
+.default .section-body {
     max-width: 1140px;
     margin: auto;
 }
@@ -160,30 +160,30 @@ header {
 }
 
 .default.light .section-title,
-.default.light .section-body{
+.default.light .section-body {
     color: #000;
 }
 
 .default.dark {
-    background-color:#000;
+    background-color: #000;
     border: 1px solid #b28756;
 }
 
 .default.dark .section-title,
-.default.dark .section-body{
+.default.dark .section-body {
     color: #fff;
 }
 
-.btn{
-    display:inline-block;
+.btn {
+    display: inline-block;
     background-color: #b28756;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
-    padding:10px 30px;
-    margin-top:30px;
+    padding: 10px 30px;
+    margin-top: 30px;
     border-radius: 20px;
 }
 
@@ -191,53 +191,98 @@ header {
 /* CSS DE AREAS ESPECIFICIAS */
 
 
-.section-about{
+.section-about {
     display: flex;
 }
 
 
-.section-about-left{
+.section-about-left {
     flex: 1;
     margin-right: 20px;
 }
 
-.section-about-right{
+.section-about-right {
     width: 520px;
 }
 
-.section-about-right img{
+.section-about-right img {
     width: 480px;
     box-shadow: 0px 0px 33px black;
     text-align: center;
 }
 
-.section-about-left p{
+.section-about-left p {
     font-size: 14px;
     line-height: 20px;
 }
 
-.section-services{
+.section-services {
     display: flex;
 }
-.section-item{
+
+.section-item {
     flex: 1;
     text-align: center;
     border-right: 1px solid #333;
     padding: 15px;
 }
 
-.section-item:first-child{
+.section-item:first-child {
     border-left: 1px solid #333;
 }
 
-.section-services h4{
-    margin-top:20px;
+.section-services h4 {
+    margin-top: 20px;
     text-decoration: uppercase;
     font-size: 18px;
 }
 
-.section-services p{
-    margin-top:10px;
+.section-services p {
+    margin-top: 10px;
     font-size: 13px;
     color: #999;
+}
+
+.section-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-project-filters {
+    border-top: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-project-filters ul,
+.section-project-filters li {
+    list-style-type: none;
+}
+
+.section-project-filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid rgb(184, 183, 183);
+    color: #555;
+    border-bottom: 3px solid #eee;
+    cursor: pointer;
+}
+
+
+.section-project-filters li:hover,
+.section-project-filters li.active  {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-project-filters li:hover {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-project-filters li:first-child {
+    border-left: 0px;
 }
