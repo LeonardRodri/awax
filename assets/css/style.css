@@ -117,6 +117,7 @@ header {
 .banner .slidearea h1{
     text-transform: uppercase;
     font-size: 50px;
+    text-align: center;
 }
 
 .banner h1 span{
@@ -152,6 +153,91 @@ header {
 .default .section-body{
     max-width: 1140px;
     margin: auto;
-    min-height: 100px;
-    background-color: #ccc;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+
+.default.dark {
+    background-color:#000;
+    border: 1px solid #b28756;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+
+.btn{
+    display:inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius: 20px;
+}
+
+
+/* CSS DE AREAS ESPECIFICIAS */
+
+
+.section-about{
+    display: flex;
+}
+
+
+.section-about-left{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section-about-right{
+    width: 520px;
+}
+
+.section-about-right img{
+    width: 480px;
+    box-shadow: 0px 0px 33px black;
+    text-align: center;
+}
+
+.section-about-left p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section-services{
+    display: flex;
+}
+.section-item{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-item:first-child{
+    border-left: 1px solid #333;
+}
+
+.section-services h4{
+    margin-top:20px;
+    text-decoration: uppercase;
+    font-size: 18px;
+}
+
+.section-services p{
+    margin-top:10px;
+    font-size: 13px;
+    color: #999;
 }
